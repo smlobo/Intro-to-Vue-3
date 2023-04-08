@@ -33,6 +33,7 @@
               @mouseover="updateImage(variant.image)" 
               class="color-circle"
               v-bind:style="{ backgroundColor: variant.color}"
+              :class="{ 'out-of-stock-img': !inStock }"
             ></div>
             <button 
               class="button" 
